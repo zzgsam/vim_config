@@ -1,6 +1,3 @@
-hi Comment ctermfg=blue
-set ts=4
-set relativenumber
 
 "configuration for pathogen's installation
 execute pathogen#infect()
@@ -14,3 +11,8 @@ filetype plugin on
 let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
 " change the height of the completion menu
 let g:pydiction_menu_height = 3
+
+"personal configuration
+hi Comment ctermfg=blue
+set ts=4
+set relativenumber
