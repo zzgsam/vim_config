@@ -30,6 +30,22 @@ let g:ycm_filetype_whitelist = {
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
+set conceallevel=1
+let g:tex_conceal='abdmg'
+"snippet added
+"snippets directory
+set runtimepath+=~/.vim/bundle/mysnippets
+"let g:UltiSnipsSnippetsDirectories = ["$HOME/.vim/bundle/mysnippets"]
+let g:UltiSnipsUsePythonVersion = 3
+" Trigger configuration. Do not use <tab> if you use
+" https://github.com/Valloric/YouCompleteMe.
+ let g:UltiSnipsExpandTrigger="<c-e>"
+ let g:UltiSnipsJumpForwardTrigger="<c-b>"
+ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" " If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical""
+"
 "livepreview_previewer
 let g:livepreview_previewer = 'zathura'
 autocmd Filetype tex setl updatetime=1
