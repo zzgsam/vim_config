@@ -30,7 +30,9 @@ let g:ycm_filetype_whitelist = {
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
-
+"livepreview_previewer
+let g:livepreview_previewer = 'zathura'
+autocmd Filetype tex setl updatetime=1
 "personal configuration
 hi Comment ctermfg=blue
 set ts=4
