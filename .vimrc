@@ -34,8 +34,9 @@ set conceallevel=1
 let g:tex_conceal='abdmg'
 "snippet added
 "snippets directory
-set runtimepath+=~/.vim/bundle/mysnippets
-"let g:UltiSnipsSnippetsDirectories = ["$HOME/.vim/bundle/mysnippets"]
+"set runtimepath+=~/.vim/bundle/mysnippets
+"let g:UltiSnipsSnippetsDir = $HOME . 
+""/.vim/bundle/mysnips"
 let g:UltiSnipsUsePythonVersion = 3
 " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
@@ -47,7 +48,8 @@ let g:UltiSnipsUsePythonVersion = 3
 let g:UltiSnipsEditSplit="vertical""
 "
 "livepreview_previewer
-let g:livepreview_previewer = 'zathura'
+"let g:livepreview_previewer = 'zathura'
+let g:livepreview_previewer = 'evince'
 autocmd Filetype tex setl updatetime=1
 "personal configuration
 hi Comment ctermfg=blue
