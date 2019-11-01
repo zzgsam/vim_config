@@ -51,7 +51,16 @@ let g:UltiSnipsEditSplit="vertical""
 "let g:livepreview_previewer = 'zathura'
 let g:livepreview_previewer = 'evince'
 autocmd Filetype tex setl updatetime=1
-"personal configuration
+"""personal configuration"""
 hi Comment ctermfg=blue
 set ts=4
 set relativenumber
+""vim color""
+hi Comment ctermfg=LightBlue
+"highlight"
+set hlsearch
+highlight Search ctermbg=yellow ctermfg=black 
+highlight IncSearch ctermbg=black ctermfg=yellow 
+highlight MatchParen cterm=underline ctermbg=NONE ctermfg=NONE
+"disable highlight when space pressed. enable highlight for next search
+:nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
